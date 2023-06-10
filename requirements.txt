@@ -1,0 +1,4 @@
+pandas
+pygame
+PyOpenGL
+PyOpenGL_accelerate
