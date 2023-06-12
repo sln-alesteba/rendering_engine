@@ -7,6 +7,7 @@ from OpenGL.GL import *
 class SurfaceBasicMaterial(BasicMaterial):
 
     def __init__(self, properties={}):
+        
         super().__init__()
 
         # render vertices as triangles

@@ -4,7 +4,6 @@ import os
 
 from core.input import Input
 
-
 # https://stackoverflow.com/questions/15933493/pygame-error-no-available-video-device
 # es muy importante tener en cuenta que wsl parece no traer ningún pequete de interefaz gráfica.
 

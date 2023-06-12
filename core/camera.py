@@ -10,12 +10,15 @@ from numpy.linalg import inv
 class Camera(Object3D):
 
     def __init__(self, angleOfView=60, aspectRatio=1, near=0.1, far=100):
+
         super().__init__()
+
         self.projectionMatrix = Matrix.makePerspective(angleOfView, aspectRatio, near, far)
+        
         self.viewMatrix = Matrix.makeIdentity()
 
     def updateViewMatrix(self):
-        # we use the compued world matrix
+        # we use the computed world matrix
         self.viewMatrix = inv( self.getWorldMatrix() )
 
 
